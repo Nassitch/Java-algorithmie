@@ -19,6 +19,15 @@ public class Person {
         Rectangle rectangleArea = new Rectangle();
         rectangleArea.computeArea();
 
+        BankAccount accountOne = new BankAccount(30, "Johnny Depp", 333221);
+        System.out.println("Information of this account : " + accountOne.getBalance() + "$," + " Mr " + accountOne.getHolder() + ", n° " + accountOne.getAccountNumber());
+        System.out.println("Current solde : " + accountOne.getBalance() + "$");
+        System.out.println("Fail ...");
+        accountOne.withdraw(40);
+        System.out.println("Success ...");
+        accountOne.withdraw(20);
+
+
     }
 
     public String name;
