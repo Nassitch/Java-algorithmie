@@ -7,6 +7,18 @@ public class Person {
         Person personThree = new Person("Kaaris", 44);
 
         System.out.println(personOne.displayDetails());
+        System.out.println(personTwo.displayDetails());
+        System.out.println(personThree.displayDetails());
+
+        Employee employeeOne = new Employee("Johnny Depp", 60, 26623);
+        System.out.println(employeeOne.displayDetails());
+
+        Circle circleArea = new Circle();
+        circleArea.computeArea();
+
+        Rectangle rectangleArea = new Rectangle();
+        rectangleArea.computeArea();
+
     }
 
     public String name;
