@@ -6,16 +6,23 @@ public class Person {
         Person personTwo = new Person("Jane Doe", 35);
         Person personThree = new Person("Kaaris", 44);
 
-        System.out.println("Mr " + personOne.name + ", " + personOne.age + " ans.");
-        System.out.println("Mme " + personTwo.name + ", " + personTwo.age + " ans.");
-        System.out.println("Mr " + personThree.name + ", " + personThree.age + " ans.");
+        System.out.println(personOne.displayDetails());
     }
 
     public String name;
     public int age;
+    private String pseudo;
 
     Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public String displayDetails() {
+        return this.name + ", " + this.age + " years.";
+    }
+
+    public void setPseudo(String pseudo) {
+        this.pseudo = pseudo;
     }
 }
